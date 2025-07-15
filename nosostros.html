@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaarSpa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+      <a href="#" class="logo">Ma'arSpa</a>
+        <div class="barramenu"></div>
+          <nav>
+            <ul>
+              <li><a href="Index.html">Inicio</a></li>
+              <li><a href="nosostros.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="contacto.html" id="contacto">Contáctanos</a></li>
+            </ul>
+         </nav>
+    </header>
+    <section class="seccion1">
+        <h1>Nosotros</h1>
+    </section>
+    <section class="sobremi">
+            <span class="imagennosotros">
+                <img src="imagenes/descarga.jpg" alt="">
+            </span>
+            <div class="informacion1">
+                <h2>Sobre Nosotros</h2>
+                <div class="sanacion">Maar Spa el mejor lugar de sanacion</div>
+                <p class="parrafo1">Somos una empresa con más de 7 años de experiencia, antes nos llamabamos Illaris Spa, pero debido a la pandemia tuvimos que cerrar, sin embargo supimos como levantarnos y abrimos un nuevo local, pero con una identidad más fuerte y centrada, cn la finalidad de priorizar el bienestar de todos nuestros clientes.</p>
+                <p class="parrafo1">Actualmente hemos aprendido más técnicas y ofrecemos más servicios que antes, de los cuales los más resaltantes son el drenaje linfático, piedras calientes y la masoterapia.</p>
+                <p class="parrafo1">Esperamos puedan visitarnos pronto, siempre les daremos una calida bienvenida y haremos todo lo que este a nuestro alcance para atenderlo de la mejor manera.</p>
+                <h2>Roxana Mariella</h2>
+                <div class="redes">
+                    <i class="fa-solid fa-phone">
+                        <a href="#">+51 987 654 321</a>
+                    </i>
+                    <i class="fa-soli fa-envelope"><a href="#">info@maarspa.com</a></i>
+
+                </div>
+
+            </div>
+     </section>
+
+      <section class="secciondescuento">
+      <div class="img">
+        <img src="imagenes/25descuento.jpg" alt="">
+      </div>
+      
+      <div class="textodesc">
+        <h2>Obtén un 25% en tu primera reserva</h2>
+        <p>Aprovecha estos descuentos por tu primera reserva en cualquier tratamiento</p>
+      </div>
+
+      <a href="#">Reserva tu cita </a>
+
+    </section>
+
+    <div id="modalReserva" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar-modal">&times;</span>
+        <h2>Reservar cita</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="telefono">Número:</label>
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ej. 987654321">
+
+          <label for="servicio">Servicio:</label>
+          <select id="servicio" name="servicio" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Aromaterapia">Aromaterapia</option>
+            <option value="Cosmiatría">Cosmiatría</option>
+            <option value="Drenaje Linfático">Drenaje Linfático</option>
+            <option value="Masajes">Masajes</option>
+            <option value="Peptonas">Peptonas</option>
+            <option value="Plasma">Plasma</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    
+<footer class="footer">
+  <div class="footercont">
+    <div class="footer-logo">
+      <h2 id="marca">Ma'arSpa</h2>
+      <p>Tu bienestar, nuestra prioridad</p>
+    </div>
+
+    <div class="footerenlaces">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosostros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contacto">
+      <h3>Contacto</h3>
+      <p>📍 Lima, Perú</p>
+      <p>📞 +51 987 654 321</p>
+      <p>✉️ info@maarspa.com</p>
+
+      <div class="redes">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/51987654321" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    <p>&copy; 2025 Ma'arSpa. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+    <script src="Maar.js"></script>
+</body>
+
+</html>

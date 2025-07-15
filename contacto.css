@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.seccion1{
+    background-color: rgba(255, 255, 255, 0.993);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem 0% 15rem;
+    height: 60vh;
+}
+.seccion1 h1{
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.cajacontacto{
+    display: flex;
+    padding: 4rem 5%;
+    background-color: white;
+
+}
+
+.cajacontacto .mapa{
+    flex-basis: 70%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.cajacontacto .mapa iframe{
+    width: 100%;
+    border-radius: 6px;
+    
+
+}
+
+.cajacontacto .forma{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 0 12px 1px #243673;
+    position: relative;
+    z-index: 1;
+
+    
+
+}
+
+.cajacontacto .forma .f-head{
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d81442;
+}
+
+
+
+.cajacontacto .forma form {
+    display: flex;
+    flex-direction: column;
+    padding: .1rem;
+    gap: 1rem;
+}
+.cajacontacto .forma form input,
+.cajacontacto .forma form select,
+.cajacontacto .forma form textarea,
+.cajacontacto .forma form button {
+    padding: .7rem 1rem .7rem .5rem;
+    box-shadow: 0 0 1px 1px #243673;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+::placeholder{
+    color: #3e4359;
+}
+
+.cajacontacto .forma form button{
+    padding: 17px 30px;
+    font-size: 17px;
+    width: fit-content;
+    text-transform: uppercase;
+    background-color:#d81442 ;
+    border: 1px solid #d81442;
+    color: #ffffff;
+    box-shadow: none;
+    transition: .5s;
+}
+
+.cajacontacto .forma form button:hover{
+    background-color: #f02655;
+}
+
+@media(max-width:1024px){
+    .cajacontacto{
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+    .cajacontacto .forma{
+        width: 90%;
+    }
+}
+
+#marca{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d81442;
+    font-weight: 590;
+    text-shadow: .5px .5px 3px #d81442;
+}

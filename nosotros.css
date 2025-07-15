@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.seccion1{
+    background-color: rgba(255, 255, 255, 0.993);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem 0% 15rem;
+    height: 60vh;
+    text-align: center;
+}
+.seccion1 h1{
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+     ;
+}
+
+.seccion1 h2, .parrafo1{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+
+
+}
+
+
+
+
+.sobremi {
+  padding: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+}
+.sobremi .imagennosotros {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sobremi .imagennosotros img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.625rem;
+  display: block;
+}
+.sobremi .informacion1 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.sobremi .informacion1 h2 {
+  color: #d81442;
+}
+.sobremi .informacion1 .sanacion {
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.sobremi .informacion1 .redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.sobremi .informacion1 .redes i {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.sobremi .informacion1 .redes i a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+.sobremi .informacion1 .redes i a:hover {
+  color: #d81442;
+}
+.parrafo1 {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+
+
+.secciondescuento{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    position: relative;
+    gap: 3rem;
+    
+}
+
+.secciondescuento::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   z-index: -2;
+   background-image: url(imagenes/fondodescuento.jpg);
+}
+
+.secciondescuento::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: #d81442;
+   z-index: -2;
+   opacity: 0.60;
+}
+
+.secciondescuento .img{
+    max-width: 7rem;
+    max-height: 7rem;
+    overflow-y: hidden;
+
+}
+.secciondescuento .img img{
+    width: 100%;
+    height: 100%;
+}
+.secciondescuento .textodesc{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 15px;
+
+}
+.secciondescuento .textodesc h2{
+    font-size: 2.2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.secciondescuento a{
+    padding: 17px 30px;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 1px solid #f7f7f7;
+    background-color: transparent;
+    color: #f7f7f7;
+    transition: all .4s ease;
+    text-align: center;
+}
+
+.secciondescuento a:hover{
+    background-color:#f7f7f7 ;
+    color: #d81442;
+    border-radius: 1px solid #f7f7f7;
+}
+
+@media(max-width: 1024px) {
+  .sobremi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobremi .informacion1 {
+    width: 100%;
+  }
+
+  .secciondescuento {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seccion1 h1 {
+    font-size: 4rem;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .seccion1 {
+    padding: 8rem 1rem;
+    height: auto;
+  }
+
+  .seccion1 h1 {
+    font-size: 3rem;
+  }
+
+  .sobremi {
+    padding: 1.5rem;
+  }
+
+  .parrafo1 {
+    font-size: 1rem;
+  }
+
+  .secciondescuento {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .secciondescuento .textodesc h2 {
+    font-size: 1.5rem;
+  }
+
+  .secciondescuento a {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .sobremi .informacion1 .redes {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+#marca{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d81442;
+    font-weight: 590;
+    text-shadow: .5px .5px 3px #d81442;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-contenido {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #d81442;
+}
+
+.modal-contenido h2 {
+  margin-bottom: 1rem;
+  color: #d81442;
+}
+
+.modal-contenido label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.modal-contenido input,
+.modal-contenido select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-contenido button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #d81442;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-contenido button:hover {
+  background-color: #b91238;
+}

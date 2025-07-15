@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaarSpa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="servicios.css">
+
+</head>
+<body>
+    <header>
+      <a href="#" class="logo">Ma'arSpa</a>
+        <div class="barramenu"></div>
+          <nav>
+            <ul>
+              <li><a href="Index.html">Inicio</a></li>
+              <li><a href="nosostros.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="contacto.html" id="contacto">Contáctanos</a></li>
+            </ul>
+         </nav>
+    </header>
+    <section class="seccion1">
+        <h1>Servicios</h1>
+    </section>
+
+
+    <div class="contenedor-principal">
+      
+        <div class="galeria">
+            
+            <div class="tarjeta-imagen">
+                <img src="imagenes/aromaterapia-servicio.jpg" alt="" class="imagen">
+                <div class="contenido-tarjeta">
+                    <h3 class="titulo-tarjeta">Aromaterapia</h3>
+                    <p class="descripcion-tarjeta">Disfruta de una experiencia de relajación profunda con nuestra sesión de aromaterapia, que utiliza aceites esenciales naturales para equilibrar cuerpo, mente y emociones. Ideal para reducir el estrés, mejorar el ánimo y promover el bienestar general.</p>
+                </div>
+            </div>
+            
+           
+            <div class="tarjeta-imagen">
+                <img src="imagenes/cosmiatria-servicio.jpg" alt="" class="imagen">
+                <div class="contenido-tarjeta">
+                    <h3 class="titulo-tarjeta">Cosmiatria</h3>
+                    <p class="descripcion-tarjeta">Tratamientos faciales y corporales avanzados que mejoran la salud y apariencia de tu piel.</p>
+                </div>
+            </div>
+            
+           
+            <div class="tarjeta-imagen">
+                <img src="imagenes/drenaje-servicio.jpg" alt="" class="imagen">
+                <div class="contenido-tarjeta">
+                    <h3 class="titulo-tarjeta">Drenaje linfático</h3>
+                    <p class="descripcion-tarjeta">Masaje suave que estimula el sistema linfático, reduce la hinchazón y mejora la circulación.</p>
+                </div>
+            </div>
+            
+           
+            <div class="tarjeta-imagen">
+                <img src="imagenes/masaje-servicio.jpg" alt="" class="imagen">
+                <div class="contenido-tarjeta">
+                    <h3 class="titulo-tarjeta">Masajes Especializados</h3>
+                    <p class="descripcion-tarjeta">Técnicas personalizadas que alivian tensiones profundas, mejoran la movilidad y promueven el bienestar integral.</p>
+                </div>
+            </div>
+            
+            
+            <div class="tarjeta-imagen">
+                <img src="imagenes/peptonas-servicio.jpg" alt="" class="imagen">
+                <div class="contenido-tarjeta">
+                    <h3 class="titulo-tarjeta">Peptonas</h3>
+                    <p class="descripcion-tarjeta">Biorevitalizantes que estimulan la regeneración celular, mejoran la firmeza y rejuvenecen la piel.</p>
+                </div>
+            </div>
+            
+           
+            <div class="tarjeta-imagen">
+                <img src="imagenes/plasma-servicio.jpg" alt="" class="imagen">
+                <div class="contenido-tarjeta">
+                    <h3 class="titulo-tarjeta">Plasma rico en plaquetas</h3>
+                    <p class="descripcion-tarjeta">Tratamiento regenerativo que utiliza tu propio plasma para rejuvenecer la piel y estimular la producción de colágeno.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <section class="secciondescuento">
+      <div class="img">
+        <img src="imagenes/25descuento.jpg" alt="">
+      </div>
+      
+      <div class="textodesc">
+        <h2>Obtén un 25% en tu primera reserva</h2>
+        <p>Aprovecha estos descuentos por tu primera reserva en cualquier tratamiento</p>
+      </div>
+
+      <a href="#" id="btnReserva">Reserva tu cita </a>
+      
+    <div id="modalReserva" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar-modal">&times;</span>
+        <h2>Reservar cita</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="telefono">Número:</label>
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ej. 987654321">
+
+          <label for="servicio">Servicio:</label>
+          <select id="servicio" name="servicio" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Aromaterapia">Aromaterapia</option>
+            <option value="Cosmiatría">Cosmiatría</option>
+            <option value="Drenaje Linfático">Drenaje Linfático</option>
+            <option value="Masajes">Masajes</option>
+            <option value="Peptonas">Peptonas</option>
+            <option value="Plasma">Plasma</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+      
+
+    </section>
+    <footer class="footer">
+  <div class="footercont">
+    <div class="footer-logo">
+      <h2 id="marca">Ma'arSpa</h2>
+      <p>Tu bienestar, nuestra prioridad</p>
+    </div>
+
+    <div class="footerenlaces">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosostros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contacto">
+      <h3>Contacto</h3>
+      <p>📍 Lima, Perú</p>
+      <p>📞 +51 987 654 321</p>
+      <p>✉️ info@maarspa.com</p>
+
+      <div class="redes">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/51987654321" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    <p>&copy; 2025 Ma'arSpa. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+   
+</body>
+</html>
+
+        
+        <script src="Maar.js"></script>
+
+    
+    </div>
